@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundo"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorFundoBranco"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editText_senha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText_email"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorFundoBranco"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_senha"
+        android:text="Login"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorButtonText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro"
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:layout_below="@+id/button_Login"
+        android:background="@color/colorFundo"/>
+
+</RelativeLayout>
